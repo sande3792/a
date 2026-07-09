@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-  <div id="status">キーボードの [A] または [B] を押してください</div>
+  <div id="status">キーボードの [A] または [D] を押してください</div>
 
   <script>
     // TypeScriptとして記述する場合は (event: KeyboardEvent) => { ... } と型を定義します
@@ -30,7 +30,7 @@
         document.body.style.backgroundColor = '#ff4d4d'; // 赤色
         document.body.style.color = '#ffffff';
         if (statusElement) statusElement.textContent = 'A が押されました（赤）';
-      } else if (key === 'b') {
+      } else if (key === 'd') {
         document.body.style.backgroundColor = '#4d79ff'; // 青色
         document.body.style.color = '#ffffff';
         if (statusElement) statusElement.textContent = 'B が押されました（青）';
